@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="w-[100%] h-[100vh] flex flex-col justify-center items-center bg-gray-900 text-white ">
+
+  <div class="input-container w-full max-w-4xl flex flex-wrap justify-center gap-4 sm:gap-6 mb-12">
+
+    <input type="number" id="day" placeholder="Day" 
+      class="outline-0 px-4 py-2 rounded-2xl w-[45%] sm:w-32 md:w-24 lg:w-28" />
+    <input type="number" id="hour" placeholder="Hours" 
+      class="outline-0 px-4 py-2 rounded-2xl w-[45%] sm:w-32 md:w-24 lg:w-28" />
+    <input type="number" id="minute" placeholder="Minute" 
+      class="outline-0 px-4 py-2 rounded-2xl w-[45%] sm:w-32 md:w-24 lg:w-28" />
+    <input type="number" id="second" placeholder="Second" 
+      class="outline-0 px-4 py-2 rounded-2xl w-[45%] sm:w-32 md:w-24 lg:w-28" />
+
+  </div>
+
+
+  <div class="circle-container relative w-72 h-72 sm:w-96 sm:h-96 md:w-[460px] md:h-[460px] rounded-full overflow-hidden flex justify-center items-center mb-8">
+
+    <div class="fill-circle absolute inset-0 origin-center -z-10 rounded-full"></div>
+    <div class="main-circle w-[90%] h-[90%] rounded-full bg-[#2e2e2e] z-20 flex justify-center items-center text-xl sm:text-3xl md:text-[45px] font-medium text-center">
+      00 : 00 : 00 : 00
+    </div>
+
+  </div>
+
+
+  <div class="btn w-full max-w-sm flex justify-center gap-6">
+    <button class="start bg-[#BC6FF1] w-28 h-11 rounded-[26px] cursor-grab font-medium hover:bg-[#bd6ff1e5] duration-300">
+      Start
+    </button>
+    <button class="reset bg-[#BC6FF1] w-28 h-11 rounded-[26px] cursor-grab font-medium hover:bg-[#bd6ff1e5] duration-300">
+      Reset
+    </button>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
+
